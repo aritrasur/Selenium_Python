@@ -12,7 +12,7 @@ browser.get("https://mail.google.com")
 
 #Enter email id
 emailid= browser.find_element_by_id('Email')
-emailid.send_keys('nova.cloc@gmail.com')
+emailid.send_keys('Your Email ID')
 
 #Click on Next button
 nextButton= browser.find_element_by_id('next')
@@ -21,7 +21,7 @@ nextButton.click()
 #Enter Password
 password = WebDriverWait(browser, 10).until(
    EC.presence_of_element_located((By.ID, 'Passwd')))
-password.send_keys('ondway#1')
+password.send_keys('YourPassword')
 
 #Click on SignIn
 signInButton = browser.find_element_by_id('signIn')
@@ -34,7 +34,7 @@ Composeemail.click()
 
 #Input to
 mailto = browser.find_element_by_name("to")
-mailto.send_keys('aritra@flywheel.com')
+mailto.send_keys('EnterMailID of Sender')
 
 #Mail Subject
 entersubject= WebDriverWait(browser,10)
