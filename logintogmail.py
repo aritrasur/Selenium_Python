@@ -34,7 +34,7 @@ Composeemail.click()
 
 #Input to
 mailto = browser.find_element_by_name("to")
-mailto.send_keys('EnterMailID of Sender')
+mailto.send_keys('Enter Recipient Email ID')
 
 #Mail Subject
 entersubject= WebDriverWait(browser,10)
